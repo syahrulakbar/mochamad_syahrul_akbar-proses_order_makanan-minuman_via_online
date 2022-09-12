@@ -1,0 +1,12 @@
+1.	Mulai
+2.	Buka aplikasi makanan/minuman
+3.	Cari makanan/minuman yang ingin dipesan
+4.	Pilih tambah pesanan
+5.	Apakah ingin menambah pesanan lagi?
+    •	Jika iya, maka makanan yang telah dipilih sebelumnya akan dimasukan ke keranjang pesanan, lalu Kembali memilih makanan/minuman 
+    •	Jika tidak, maka atur delivery/pickup
+6.	Tentukan lokasi pengiriman
+7.	Hitung total harga (total harga = harga makanan * qty)
+8.	Bayar dengan tunai / e-wallet
+9.	Terima pesanan
+10.	selesai
