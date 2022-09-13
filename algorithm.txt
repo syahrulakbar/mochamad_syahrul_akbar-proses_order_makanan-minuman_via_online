@@ -1,6 +1,8 @@
 1.	Mulai
 2.	Buka aplikasi makanan/minuman
-3.	Cari makanan/minuman yang ingin dipesan
+3.	Apakah makanan/minuman yang dicari ada pada menu?
+    •	Jika ya, maka tampilkan makanan / minuman yang dicari
+    •	Jika tidak, maka tampilkan “Pesanan yang dicari tidak ada”, lalu Kembali mencari makanan / minuman
 4.	Pilih tambah pesanan
 5.	Apakah ingin menambah pesanan lagi?
     •	Jika iya, maka makanan yang telah dipilih sebelumnya akan dimasukan ke keranjang pesanan, lalu Kembali memilih makanan/minuman 
