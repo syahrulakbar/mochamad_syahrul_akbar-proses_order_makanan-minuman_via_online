@@ -1,19 +1,19 @@
 PROGRAM Pesan makanan / minuman via online
-
 DECLARATION
 	menu_pesanan : array
-	search_pesanan : string
-      harga_pesanan, jumlah_pesanan, total_harga : integer
+	search_pesanan, lokasi_pengiriman  : string
+    harga_pesanan, jumlah_pesanan, total_harga : integer
 BEGIN
-Pilihan
-	WRITE “Aplikasi Order Makanan dan Minuman”
-	INPUT “search_pesanan”
-		IF “search_pesanan” != “menu_makanan” THEN
-			WRITE “menu yang dicari tidak ada”
-			GOTO “pilihan”
-		ELSE IF “search_pesanan” == ”menu_makanan” THEN
-			DISPLAY “menu makanan”
-		END IF
+	Pilihan :
+		WRITE “Aplikasi Order Makanan dan Minuman”
+		INPUT “search_pesanan”
+			IF “search_pesanan” != “menu_makanan” THEN
+				WRITE “menu yang dicari tidak ada”
+				GOTO “pilihan”
+			ELSE IF “search_pesanan” == ”menu_makanan” THEN
+				DISPLAY “menu makanan”
+			END IF
+			
 	INPUT “lokasi_pengiriman”
 
 	total_harga=harga_pesanan * jumlah_pesanan
