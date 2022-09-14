@@ -1,7 +1,7 @@
 PROGRAM Pesan makanan / minuman via online
 DECLARATION
 	menu_pesanan : array
-	search_pesanan, lokasi_pengiriman  : string
+	search_pesanan, lokasi_pengiriman, jenis_pembayaran : string
     harga_pesanan, jumlah_pesanan, total_harga : integer
 BEGIN
 	Pilihan :
@@ -19,6 +19,6 @@ BEGIN
 	total_harga=harga_pesanan * jumlah_pesanan
 	WRITE “total_harga”
 
-	INPUT “jenis_pembayaran(e-wallet || tunai)”
+	INPUT “jenis_pembayaran (e-wallet || tunai)”
 	WRITE “Pesanan siap dikirim”
 END
