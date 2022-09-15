@@ -1,0 +1,24 @@
+PROGRAM Pesan makanan / minuman via online
+DECLARATION
+	menu_pesanan : array
+	search_pesanan, lokasi_pengiriman, jenis_pembayaran : string
+    harga_pesanan, jumlah_pesanan, total_harga : integer
+BEGIN
+	Pilihan :
+		WRITE “Aplikasi Order Makanan dan Minuman”
+		INPUT “search_pesanan”
+			IF “search_pesanan” != “menu_makanan” THEN
+				WRITE “menu yang dicari tidak ada”
+				GOTO “pilihan”
+			ELSE IF “search_pesanan” == ”menu_makanan” THEN
+				DISPLAY “menu makanan”
+			END IF
+			
+	INPUT “lokasi_pengiriman”
+
+	total_harga=harga_pesanan * jumlah_pesanan
+	WRITE “total_harga”
+
+	INPUT “jenis_pembayaran (e-wallet || tunai)”
+	WRITE “Pesanan siap dikirim”
+END
