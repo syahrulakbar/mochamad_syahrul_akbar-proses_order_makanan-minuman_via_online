@@ -1,18 +1,13 @@
-Algoritma Proses Order Makanan / Minuman via Online
-
-1.	Mulai
-2.	Buka aplikasi order makanan/minuman
-3.	Cari makanan/minuman yang ingin dipesan
-4.	Apakah makanan/minuman yang dicari ada pada menu?
-    •	Jika ya, maka tampilkan makanan / minuman yang dicari
-    •	Jika tidak, maka tampilkan “Pesanan yang dicari tidak ada”, lalu Kembali mencari makanan / minuman
-5.	Pilih tambah pesanan
-6.	Apakah ingin menambah pesanan?
-    •	Jika iya, maka makanan yang telah dipilih sebelumnya akan dimasukan ke keranjang pesanan, lalu Kembali memilih makanan/minuman 
-    •	Jika tidak, maka atur delivery/pickup
-7.	Tentukan lokasi pengiriman
-8.	Hitung Total Harga (harga makanan * qty)
-9.  Tampilkan total harga pesanan
-10.	Bayar dengan tunai / e-wallet
-11.	Terima pesanan
-12.	Selesai
+Algorithm Order food and drinks
+1.	Start
+2.	Showing the food and beverage menu
+3.	Input Add food / drink
+4.	Input order quantity
+5.	Add another order?
+    •	If yes, then the previously selected food will be added to the order cart, then return to choosing food/drinks
+    •	If no, then input delivery location
+6.	Calculate total price (price food/drinks * order quantity)
+7.	Show total price
+8.	Input payment (online pay / cash on delivery)
+9.	Order ready to ship
+10.	End
