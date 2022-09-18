@@ -1,24 +1,28 @@
-PROGRAM Pesan makanan / minuman via online
-DECLARATION
-	menu_pesanan : array
-	search_pesanan, lokasi_pengiriman, jenis_pembayaran : string
-    harga_pesanan, jumlah_pesanan, total_harga : integer
+PROGRAM Order Food and Drink  Online
+DECLARE
+	order_cart, food_and_drink_menu : record [“food_and_drink” =’’ , “price_order”=’’ ,”order_quantity”=’’]
+	add_menu, delivery_locate: string
+	payment : enum
+	price_order, quantity_order, total_price : number
+	add_another_order, option : boolean
 BEGIN
-	Pilihan :
-		WRITE “Aplikasi Order Makanan dan Minuman”
-		INPUT “search_pesanan”
-			IF “search_pesanan” != “menu_makanan” THEN
-				WRITE “menu yang dicari tidak ada”
-				GOTO “pilihan”
-			ELSE IF “search_pesanan” == ”menu_makanan” THEN
-				DISPLAY “menu makanan”
+	WHILE “option” IS TRUE :
+			PRINT “food_and_drink_menu”
+			INPUT “add _menu”
+				READ “price_order”
+			READ AND WRITE ”quantity_order”
+			READ AND WRITE “add_another_order TRUE || FALSE”
+			IF “add_another_order” = TRUE THEN
+				STORE “order_cart” WITH “add_menu”
+				SET “option” WITH TRUE
+			ELSE IF “Add Another Order” = FALSE THEN
+				READ “order_cart”
+				SET “option” WITH FALSE
 			END IF
-			
-	INPUT “lokasi_pengiriman”
-
-	total_harga=harga_pesanan * jumlah_pesanan
-	WRITE “total_harga”
-
-	INPUT “jenis_pembayaran (e-wallet || tunai)”
-	WRITE “Pesanan siap dikirim”
+	INPUT “delivery_locate”
+	STORE “total_price” with CALCULATE “price_order” multiply by “order_quantity”
+	PRINT “total_price”
+	TYPE “payment” = (Online Pay, Cash on Delivery)
+	INPUT “payment”
+	PRINT “ORDER READY TO SHIP”
 END
